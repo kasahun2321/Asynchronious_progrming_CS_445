@@ -1,0 +1,1 @@
+(()=>{"use strict";new class{constructor(){console.log("A")}},new class{constructor(){console.log("B")}},new class{constructor(){console.log("C")}},console.log("ello this is ts file first"),console.log("yes sir it is working")})();

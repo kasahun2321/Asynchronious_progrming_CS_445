@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>step by step procedure to config js module with ts </h1>
+    <h4>check node js ...>> go to cmd>> node -v</h4>
+    <h4>create specific folder in ur document </h4>
+    <h4>create ur file inside the folder </h4>
+    <h4> .. >> to start json package >> npm init -y</h4>
+    <h4>create one module called module.and </h4>
+    <p>install the modile by using the npm i webpack webpack-cli -D</p>
+    <pre>export class A
+        {
+            constructor()
+            {
+                console.log("A")
+            }
+        }
+         export class B
+        {
+            constructor()
+            {
+                console.log("B")
+               
+            }
+        }
+        //this is defout export which can be export in any way.and we can 
+        // remame it as we want inside js clas wich is impoted to in this case app.js
+        export  default class C
+        {
+            constructor()
+            {
+                console.log("C")
+            }
+        }
+        class D
+        {
+            constructor()
+            {
+                console.log("D")
+            }
+        }</pre>
+        
+        <h4>create app.js file and import the module</h4>
+        <pre>import C,{A,B } from './module.js';
+            // C is defoult export so we can rename it what ever we want 
+            // in one module we have only single defoult export 
+            // and have multiple named export  named export must be same name with the class we declared inside js file
+            
+            // to execute the code call all the class imported
+            
+            new A();
+            new B();
+            new C();
+            console.log("ello this is ts file first")
+            
+            </pre>
+            <h4>then creare index.html then pass link     <script src="./bundle.js/main.js"></script></h4>
+            <h4>the above code did not run on browser becouse server not allowed for this corn data privecy</h4>
+
+            <h1>other basic comman of NMP json package</h1>
+            <h1>update ...>>>> npm update</h1>
+            <h4>create folder name inside the json file in sript tag </h4>
+            <h4>the run the command ..>> npm run bundle (bundle is the name of folder u created"</h4>
+
+            <h1>the second way to run js module wiht htmle is link the html script to new created bundle file js</h1>
+            <h3> working with type script</h3>
+     <h4>install the type script compiler </h4>
+     <h3>............>>>nmp i typescript -g  // is stand for global</h3>
+     <h3>then ...>> tsc filename.ts  //this create js file with same name</h3>
+     <h3> if we want to synchroniza the two file in d/f folder</h3>
+     <h3>configure the folder by >> instaling</h3>
+     <h3> ..>>> tsc --init   <br>
+      then it create tscongfig file the change the setting by <br>
+    <pre>
+        /* Basic Options */
+    // "incremental": true,                   /* Enable incremental compilation */
+    "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "module": "ES2020",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    // "lib": [],                             /* Specify library files to be included in the compilation. */
+    // "allowJs": true,                       /* Allow javascript files to be compiled. */
+    // "checkJs": true,                       /* Report errors in .js files. */
+    // "jsx": "preserve",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+    // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
+    // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
+    // "sourceMap": true,                     /* Generates corresponding '.map' file. */
+    // "outFile": "./",                       /* Concatenate and emit output to single file. */
+     "outDir": "./converted_TS_to_JS",     //this is folder where js file goes to                   /* Redirect output structure to the directory. */
+    // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    // "composite": true,                     /* Enable project compilation */
+    // "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */
+    // "removeComments": true,          
+    </pre>
+    
+    </h3>
+<h4>after this evey time after we made change on ts file we only run tsc command everythin will chaged on js</h4>
+
+
+
+        </body>
+</html>
