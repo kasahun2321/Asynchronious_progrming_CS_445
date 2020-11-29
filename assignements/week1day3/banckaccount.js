@@ -119,3 +119,5 @@ console.log(rectangle.calcSize());
     console.log(rectangle_1.calcSize()); // 10
 }
 ///let see the diffe made by this time
+hehehehe
+
