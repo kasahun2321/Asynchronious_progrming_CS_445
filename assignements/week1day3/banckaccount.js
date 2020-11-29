@@ -118,3 +118,4 @@ console.log(rectangle.calcSize());
     rectangle_1.length1 = 2;
     console.log(rectangle_1.calcSize()); // 10
 }
+///let see the diffe made by this time
